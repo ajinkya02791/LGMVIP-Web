@@ -1,0 +1,74 @@
+
+<!doctype html>
+<html>
+<head>
+<title>Student Enrollment Form</title>
+<meta name="description" content="Our first page">
+<meta name="keywords" content="html tutorial template">
+
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="head-container">
+<h1 class="heading">Student Enrollment Form</h1>
+</div>
+<hr />
+<div class="row">
+<div class="col">
+<div class="text-data">
+<label for="nameField"><strong>NAME</strong></label>
+<input class="nameInput " type="text" id="nameField" placeholder="Enter Here">
+
+<div>
+<label for="emailField"><strong>EMAIL</strong></label>
+<input class=" emailInput " type="text" id="emailField" placeholder="Enter Here">
+</div>
+<div class="form-group">
+<label for="webField"><strong>WEBSITE</strong></label>
+<input class="webInput " type="text" id="webField" placeholder="Enter Here">
+</div>
+<div>
+<label for="imgLinkField"><strong>IMAGE LINK</strong></label>
+<input class="imgLinkInput " type="text" id="imgLinkField" placeholder="Enter Here">
+</div>
+</div>
+<hr />
+<div  id="gender">
+<label for="genderField"><strong>GENDER</strong></label>
+<div>
+<input class=" genderInput " type="radio" value="Male" name="gender" id="maleField" placeholder="Enter Here" >
+<label for="genderField ">MALE</label>
+</div>
+<div >
+<input class=" genderInput " type="radio" value="Female" name="gender" id="femaleField" placeholder="Enter Here">
+<label for="genderField ">FEMALE</label>
+</div>
+</div>
+<hr />
+<div class="skills">
+<label for="skillField"><strong>SKILLS</strong></label><br>
+<div>
+<input class="skills" type="checkbox" id="HTML" name="skill" value="HTML">
+<label for="html"> HTML </label>
+</div>
+<div>
+<input class="skills" type="checkbox" id="CSS" name="skill" value="CSS">
+<label for="css"> CSS </label>
+</div>
+<div>
+<input class="skills" type="checkbox" id="JAVASCRIPT" name="skill" value="JAVASCRIPT">
+<label for="javascript"> JAVASCRIPT </label>
+</div>
+</div>
+<hr />
+<button class="Enroll" type="button" onclick="Enroll()" class="btn btn-lg btn-primary mt-3">Enroll Student</button>
+<button class="Clear" type="button" onclick="Clear()" class="btn btn-lg btn-danger mt-3 mx-3">Clear</button>
+</div>
+<div class="col" id="studentList">
+<div id="Enrollments"></div>
+</div>
+</div>
+ <script src="./index.js"></script>
+</body>
+</html>
