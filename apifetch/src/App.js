@@ -33,7 +33,7 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>Hello Everyone.</h1>
+      <h1>Hello Everyone</h1>
       <button onClick={fetchUserData} id="getUser">
         Get Users
       </button>
