@@ -5,18 +5,19 @@ export default function App() {
   const [users, setUsers] = useState([]);
 
   const fetchUserData = async () => {
-    try {
-      const response = await fetch("https://reqres.in/api/users");
-      if (!response.ok) {
-        throw new Error("HTTP error! status: " + response.status);
-      }
-      const responseJson = await response.json();
-      setUsers(responseJson.data); // store only the array of users
-    } catch (err) {
-      console.error("Fetch failed ❌:", err);
-      alert("Fetch failed ❌: " + err.message);
+  try {
+    const response = await fetch("https://reqres.in/api/users?page=1");
+    if (!response.ok) {
+      throw new Error("HTTP error! status: " + response.status);
     }
-  };
+    const responseJson = await response.json();
+    setUsers(responseJson.data); // store only the array of users
+  } catch (err) {
+    console.error("Fetch failed ❌:", err);
+    alert("Fetch failed ❌: " + err.message);
+  }
+};
+  
 
   return (
     <div className="App">
