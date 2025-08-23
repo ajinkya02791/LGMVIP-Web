@@ -6,7 +6,7 @@ export default function App() {
 
   const fetchUserData = async () => {
   try {
-    const response = await fetch("https://reqres.in/api/users?page=1");
+    const response = await fetch("https://reqres.in/api/users");
     if (!response.ok) {
       throw new Error("HTTP error! status: " + response.status);
     }
