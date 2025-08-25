@@ -5,7 +5,13 @@ export default function App() {
   const [users, setUsers] = useState([]);  
   
   const fetchUserData = async () => {  
-    const response = await fetch("https://reqres.in/api/users?page=2");  
+    const response = await fetch("https://reqres.in/api/users?page=1", {
+      method: "GET",
+      headers: {
+        "Accept": "application/json",
+        "x-api-key": "reqres-free-v1"
+      }
+    });  
     const responseJson = await response.json();  
     setUsers(responseJson.data);  
   };  
