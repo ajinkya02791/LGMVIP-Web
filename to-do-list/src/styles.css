@@ -21,6 +21,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .todo-list-container {
@@ -30,7 +31,7 @@ html {
   min-height: 30rem;
   border: 1px solid black;
   border-radius: 1rem;
-  margin: 5rem;
+  margin: 3rem;
   padding: 1rem;
   background-color: cyan;
 }
@@ -41,21 +42,19 @@ html {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
-  margin-top: 1rem;
-  margin-left: 100px;
 }
 
 .todo-form input {
   display: flex;
+  flex : 1 1 120px;
   color: black;
   border: 1px solid black;
   padding: 1rem;
-  padding-right: 3rem;
   margin: 0.5rem;
   border-radius: 1rem;
-  max-width: 190px;
-  min-width:50px;
+  min-width:70px;
   width: 80%;
+  margin-left : 20px;
 }
 
 .todo-form button {
@@ -66,9 +65,10 @@ html {
   border-radius: 1rem;
   font-weight: 600;
   cursor: pointer;
-  max-width: 90px;
-  min-width: 30px;
+  max-width: 110px;
+  min-width: 50px;
   width: 30%;
+  justify-content: center;
 }
 
 .todo-form button:hover {
