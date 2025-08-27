@@ -19,16 +19,13 @@ body{
 }
 
 .row{
-	display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-gap: 20px; 
-    width: 50%; 
+	display: flex; 
+	flex :1;
+  flex-direction: column;
 }
 
 .col{
-	margin: 10px; 
-	height: 700px; 
-	width: 630px;
+  
 }
 
 .text-data label {
@@ -37,7 +34,6 @@ body{
 
 .text-data input {
 	margin: 11px 0px;
-	width : 32rem;
 	height: 2rem;
 	border-radius: 8px;
 }
