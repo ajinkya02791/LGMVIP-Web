@@ -5,6 +5,7 @@
 <title>Student Enrollment Form</title>
 <meta name="description" content="Our first page">
 <meta name="keywords" content="html tutorial template">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 
 <link rel="stylesheet" href="style.css">
@@ -14,33 +15,33 @@
 <h1 class="heading">Student Enrollment Form</h1>
 </div>
 <hr />
-<div class="row">
-<div class="col">
+<div id="Box">
+<div class="Container">
+<div class="enrollmentForm">
 <div class="text-data">
-<label for="nameField"><strong>NAME</strong></label>
-<input class="nameInput " type="text" id="nameField" placeholder="Enter Here">
+  
+  <form id="enrollStudent">
+<label for="nameField"><strong>NAME </strong></label>
+<input class="nameInput ilm" type="text" id="nameField" placeholder="Enter Here">
 
-<div>
-<label for="emailField"><strong>EMAIL</strong></label>
-<input class=" emailInput " type="text" id="emailField" placeholder="Enter Here">
-</div>
-<div class="form-group">
-<label for="webField"><strong>WEBSITE</strong></label>
-<input class="webInput " type="text" id="webField" placeholder="Enter Here">
-</div>
-<div>
+<label for="emailField"><strong>EMAIL </strong>
+</label>
+<input class=" emailInput ilm" type="text" id="emailField" placeholder="Enter Here">
+
+<label for="webField"><strong>WEBSITE</strong> </label>
+<input class="webInput ilm" type="text" id="webField" placeholder="Enter Here">
+
 <label for="imgLinkField"><strong>IMAGE LINK</strong></label>
-<input class="imgLinkInput " type="text" id="imgLinkField" placeholder="Enter Here">
-</div>
+<input class="imgLinkInput ilm" type="text" id="imgLinkField" placeholder="Enter Here">
+
 </div>
 <hr />
 <div  id="gender">
 <label for="genderField"><strong>GENDER</strong></label>
-<div>
+
 <input class=" genderInput " type="radio" value="Male" name="gender" id="maleField" placeholder="Enter Here" >
 <label for="genderField ">MALE</label>
-</div>
-<div >
+
 <input class=" genderInput " type="radio" value="Female" name="gender" id="femaleField" placeholder="Enter Here">
 <label for="genderField ">FEMALE</label>
 </div>
@@ -62,13 +63,19 @@
 </div>
 </div>
 <hr />
+<div class= "submitandclear">
 <button class="Enroll" type="button" onclick="Enroll()" class="btn btn-lg btn-primary mt-3">Enroll Student</button>
 <button class="Clear" type="button" onclick="Clear()" class="btn btn-lg btn-danger mt-3 mx-3">Clear</button>
-</div>
-<div class="col" id="studentList">
-<div id="Enrollments"></div>
+</form>
 </div>
 </div>
+<div class="List" id="studentList">
+<div id="Enrolled"></div>
+</div>
+</div>
+</div>
+<div id ="floatingIcon">📋</div>
+
  <script src="./index.js"></script>
 </body>
 </html>

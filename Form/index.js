@@ -1,5 +1,8 @@
 
 let enrollments = [];
+const form = document.getElementById("enrollStudent");
+const floatIcon = document.getElementById("floatingIcon");
+const studentList = document.getElementById("studentList");
 
 
 function Clear() {
@@ -75,16 +78,23 @@ divA.appendChild(divC);
 card.appendChild(cardBody);
 card.classList.add("Enrollments");
 
-document.getElementById("studentList").appendChild(card);
+document.getElementById("Enrolled").appendChild(card);
 
-document.getElementById("nameField").value = "";
-document.getElementById("emailField").value = ""; 
-document.getElementById("webField").value = "";
-document.getElementById("imgLinkField").value = "";
-document.getElementById("maleField").checked = false;
-document.getElementById("femaleField").checked = false;
-
-document.querySelectorAll('input[name="skill"]').checked = false;  
+form.reset();
 }
 
+const Enrollements = document.getElementsByClassName("Enrollments");
+const StudList = document.getElementById("studentList");
+const Enrolled = document.getElementById("Enrolled");
+
+floatIcon.addEventListener('touchstart', () => {
+  if(Enrolled.style.display == "none")
+  {
+    Enrolled.style.display = "block";
+  }
+  else
+  {
+    Enrolled.style.display  = "none";
+  }
+})
 
