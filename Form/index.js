@@ -87,7 +87,7 @@ const Enrollements = document.getElementsByClassName("Enrollments");
 const StudList = document.getElementById("studentList");
 const Enrolled = document.getElementById("Enrolled");
 
-floatIcon.addEventListener('touchstart', () => {
+floatIcon.addEventListener('click', () => {
   if(Enrolled.style.display == "none")
   {
     Enrolled.style.display = "block";
