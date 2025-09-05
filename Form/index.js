@@ -5,6 +5,8 @@ const floatIcon = document.getElementById("floatingIcon");
 const studentList = document.getElementById("studentList");
 
 
+
+
 function Clear() {
 	var enrollments = document.getElementsByClassName("Enrollments");	
     const myNode = document.getElementById("studentList");
@@ -14,6 +16,11 @@ function Clear() {
 }
 
 function Enroll () {
+const form = document.getElementById("enrollStudent");
+
+  
+if(form.reportValidity()){
+  
 const name = document.createElement("h5");
 const web = document.createElement("h5");
 const email = document.createElement("h5");
@@ -81,6 +88,7 @@ card.classList.add("Enrollments");
 document.getElementById("Enrolled").appendChild(card);
 
 form.reset();
+}
 }
 
 const Enrollements = document.getElementsByClassName("Enrollments");

@@ -126,7 +126,8 @@ img {
 }
 
 .Enrollments {
-  background-color:grey;
+  background-color: #0096FF;
+  color: white;
   margin : 11px;
   min-height: 200px;
   max-height:380px;
@@ -151,6 +152,14 @@ img {
   #Box{
     display :flex ;
     gap: 15px;
+  }
+  
+  #Enrolled {
+    display: block;
+  }
+  
+  #floatingIcon {
+    display: none;
   }
   
 }
