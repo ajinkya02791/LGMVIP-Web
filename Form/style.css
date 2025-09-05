@@ -152,6 +152,8 @@ img {
   #Box{
     display :flex ;
     gap: 15px;
+    justify-content: space-around;
+  }
   }
   
   #Enrolled {
