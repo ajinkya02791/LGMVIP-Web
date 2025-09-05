@@ -132,7 +132,7 @@ img {
   min-height: 200px;
   max-height:380px;
   min-width:200px;
-  max-width:480px;
+  max-width:580px;
   border:2px solid black;
   border-radius:1rem;
   padding:5px;
@@ -152,7 +152,6 @@ img {
   #Box{
     display :flex ;
     gap: 15px;
-    justify-content: space-around;
   }
   }
   
