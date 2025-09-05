@@ -10,9 +10,10 @@ body{
 }
 
 .container{
-	display: flex;
+	display: grid;
 	justify-content: center;	
-	margin : 5px;
+	margin : 20px;
+	padding:20px;
 	margin-top: 50px;
 }
 
@@ -25,7 +26,7 @@ body{
 	padding: 20px;
 	border-radius: 20px;
 	box-shadow: 5px 5px 2px 1px rgba(0, 0, 0, 0.2);
-	max-width: 400px;
+	max-width: 380px;
   
 }
 
