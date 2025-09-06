@@ -148,11 +148,10 @@ img {
 }
 
 
-@media (min-width : 750px) {
+@media (min-width : 950px) {
   #Box{
     display :flex ;
     gap: 15px;
-  }
   }
   
   #Enrolled {
