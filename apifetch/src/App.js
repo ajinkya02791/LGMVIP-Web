@@ -9,7 +9,7 @@ export default function App() {
     const response = await fetch("https://reqres.in/api/users?page=1", {
       method: "GET",
       headers: {
-        "Accept": "application/json",
+        "Content-Type": "application/json",
         "x-api-key": apiKey
       }
     });  
