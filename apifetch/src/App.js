@@ -9,7 +9,7 @@ export default function App() {
       method: "GET",
       headers: {
         "Accept": "application/json",
-        "x-api-key": "reqres-free-v1"
+        "x-api-key": import.meta.VITE_API_KEY
       }
     });  
     const responseJson = await response.json();  
