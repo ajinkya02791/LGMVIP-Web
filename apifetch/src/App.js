@@ -3,7 +3,8 @@ import React, { useState } from "react";
 const apiKey =  process.env.REACT_APP_API_KEY;
   
 export default function App() {  
-  const [users, setUsers] = useState([]);  
+  const [users, setUsers] = useState([]); 
+  
   
   const fetchUserData = async () => {  
     const response = await fetch("https://reqres.in/api/users?page=1", {
