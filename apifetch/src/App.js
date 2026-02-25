@@ -1,5 +1,6 @@
 import "./styles.css";  
 import React, { useState } from "react";  
+const apiKey =  import.meta.VITE_API_KEY;
   
 export default function App() {  
   const [users, setUsers] = useState([]);  
@@ -9,7 +10,7 @@ export default function App() {
       method: "GET",
       headers: {
         "Accept": "application/json",
-        "x-api-key": import.meta.VITE_API_KEY
+        "x-api-key": apiKey
       }
     });  
     const responseJson = await response.json();  
